@@ -33,7 +33,7 @@
         wait for 100 ns;
         -- Expected output
         assert ((s_B_greater_A = '0') and
-                (s_B_equals_A  = '1') and --FAIL_report
+                (s_B_equals_A  = '0') and 
                 (s_B_less_A    = '1'))
         -- If false, then report an error
         report "Input combination COMPLETE_THIS_TEXT FAILED" severity error;
@@ -50,4 +50,4 @@
 
 3. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
+   [https://www.edaplayground.com/...](https://www.edaplayground.com/x/Qk5r)
