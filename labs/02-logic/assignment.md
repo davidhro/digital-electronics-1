@@ -45,7 +45,8 @@
 
 2. Text console screenshot during your simulation, including reports.
 
-   ![your figure]()
+   ![your figure](https://github.com/davidhro/digital-electronics-1/blob/main/labs/02-logic/EDA_screen.png)
+   ![Fail_report](https://github.com/davidhro/digital-electronics-1/blob/main/labs/02-logic/EDA_screen_fail.png)
 
 3. Link to your public EDA Playground example:
 
