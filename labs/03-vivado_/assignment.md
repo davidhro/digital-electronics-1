@@ -1,4 +1,4 @@
-# Lab 3: YOUR_FIRSTNAME LASTNAME
+# Lab 3: David Hromas
 
 ### Three-bit wide 4-to-1 multiplexer
 
