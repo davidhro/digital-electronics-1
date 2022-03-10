@@ -106,8 +106,8 @@
    -- LED(6) <= `0`
 
    -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
-   with SW select
-   -- LED(7) <= `0` when "0001",
+      with SW select
+      LED(7) <= `0` when "0001",
                 `0` when "0010",
                 `0` when "0100",
                 `0` when "1000",
