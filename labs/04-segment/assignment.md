@@ -100,11 +100,11 @@
     LED(4) <= `0` when SW = "0000";
 
    -- Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
-   -- LED(5) <= WRITE YOUR CODE HERE
+    LED(5) <= `0` when SW > "1001";
 
    -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
-   -- LED(6) <= WRITE YOUR CODE HERE
+   -- LED(6) <= `0`
 
    -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
-   -- LED(7) <= WRITE YOUR CODE HERE
+   -- LED(7) <= `0` when SW
    ```
