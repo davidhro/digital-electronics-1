@@ -98,16 +98,21 @@
 
    -- Turn LED(4) on if input value is equal to 0, ie "0000"
     LED(4) <= `0` when SW = "0000";
+              `1` when others   ;
 
    -- Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
-    LED(5) <= `0` when SW > "1001";
+    LED(5) <= `0` when SW > "1001"
+              `1` when others   ;
 
    -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
+  p_switch : process (SW)
+       begin
    if (SW mod 2) = 0 then
 		LED(6) <= '1';
 	else
 		LED(6) <= '0';
 	end if;
+	end process p_switch;
 
    -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
       with SW select
