@@ -105,7 +105,7 @@
               `1` when others;
 
    -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
-   -- p_switch : process (SW)
+    p_switch : process (SW)
       begin
    if (SW mod 2) = 0 then
 		LED(6) <= '1';
