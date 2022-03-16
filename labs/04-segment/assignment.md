@@ -97,15 +97,15 @@
    -- Experiments on your own: LED(7:4) indicators
 
    -- Turn LED(4) on if input value is equal to 0, ie "0000"
-    LED(4) <= `0` when SW = "0000";
-              `1` when others   ;
+    LED(4) <= `0` when SW = "0000",
+              `1` when others;
 
    -- Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
-    LED(5) <= `0` when SW > "1001"
-              `1` when others   ;
+    LED(5) <= `0` when SW > "1001",
+              `1` when others;
 
    -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
-  p_switch : process (SW)
+    p_switch : process (SW)
        begin
    if (SW mod 2) = 0 then
 		LED(6) <= '1';
